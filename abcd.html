@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Merriweather:ital@1&family=Mukta&family=Oswald&family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            margin: 0px;
+            padding: 0px;
+            
+            height: 100vh;
+            box-sizing: border-box;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Merriweather', serif;
+            font-family: 'Mukta', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'PT Serif', serif;
+            color: #534c78;
+            display: flex;
+            flex-direction: row;
+           
+        }
+        .bagblock img {
+            width: 10vw;
+            height: 10vh;
+        }
+        .firstblock ul {
+            list-style: none;
+            padding: 0px;
+        }
+        .firstblock {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            padding: 25px;
+            text-align: center;
+            
+            background-color: #fafafa;
+        }
+        .firstblock li {
+            padding-bottom: 25px;
+        }
+        .bagblock {
+            background-color: #fff4e8;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .bagblock button {
+            padding: 10px;
+            background-color: #f98163;
+            border-radius: 10px;
+            border: 0px;
+        }
+        .middleblock{
+            padding: 25px;
+            width: 50%;
+        }
+        .middleblock input {
+            width: 100%
+            
+        }
+        .imageblock img {
+            width: 30%;
+            height: 30vh;
+        }
+        .imageblock {
+            display: flex;
+            flex-direction: row;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .imagetext {
+            padding-top: 30px;
+        }
+        .imagetext button {
+            padding:10px 25px;
+            background-color: #fa8163;
+            border-radius: 15px;
+            border: 0px;
+        }
+        .easyshoppingblock{
+            background-color: #fff4e8;
+            border-radius: 40px;
+        }
+        .middleblock ul{
+            list-style: none;
+        }
+        .middleblock li {
+            display: inline;
+            padding-right: 25px;
+        }
+        .mon {
+            width: 2vw;
+            height: 5vh;
+            background-color:#fbcf9c;
+            margin-right: 5px;
+        }
+        .tue {
+            width: 2vw;
+            height: 5vh;
+            background-color:#fbcf9c;
+            margin-right: 5px;
+        }
+        .wed {
+            width: 2vw;
+            height: 5vh;
+            background-color:#fbcf9c;
+            margin-right: 5px;
+        }
+        .thu {
+            width: 2vw;
+            height: 15vh;
+            background-color:#fbcf9c;
+            margin-right: 5px;
+        }
+        .fri {
+            width: 2vw;
+            height: 3vh;
+            background-color:#fbcf9c;
+            margin-right: 5px;
+        }
+        .sat {
+            width: 2vw;
+            height: 10vh;
+            background-color:#fbcf9c;
+            margin-right: 5px;
+        }
+        .graph {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            
+        }
+        .graph div {
+            text-align: center;
+        }
+        .graph p{
+            margin: 0px;
+        }
+        .hover:hover .hide {
+            display: block;
+        }
+        .hover:hover .thu {
+            background-color: #fa8163;
+            cursor: pointer;
+            
+        }
+        
+        .sixtyblock {
+            border: 0.2px solid gray;
+            width: 40%;
+            padding-left:  20px;
+            border-radius: 20px;
+        }
+        .nikeblock img{
+            width: 10%;
+            height: 10%;
+            padding-right: 30px;
+        }
+        .row1 {
+            display: flex;
+            flex-direction: row;
+        }
+        .productsblock {
+            display: flex;
+            flex-direction: row;
+        }
+        .row1 p {
+            padding-right: 30px;
+        }
+        .nikeblock {
+            padding-left: 25px;
+            width: 60%;
+        }
+        .row1 input {
+            width: 25px;
+        }
+        .finalblock {
+           
+            width: 25%;
+            padding: 25px;
+            border-left:1px solid #f3f3f3;
+        }
+        .moneyblock {
+            background-color: #fa8163;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0px;
+            /* justify-content: space-around; */
+            align-items: center;
+            margin-top: 25px;
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+        .activity h3 {
+            margin: 0px;
+            padding: 0px;
+        }
+        .activity p{
+            margin: 0px;
+            padding: 0px;
+        }
+        .activity {
+            display: flex;
+            flex-direction: row;
+            margin-top: 25px;
+            justify-content: space-between;
+        }
+        .row1:hover {
+            box-shadow: 0px 5px 10px 3px #f7f7f7 ;
+        }
+        .finalblock input {
+            width: 100%;
+        }
+        .moneyblock button {
+            padding: 10px 30px;
+            border-radius: 100px;
+            border: 0px;
+            color:#534c78;;
+        }
+        .moneyblock p {
+            font-size: 2rem;
+            margin: 0px;
+            color: #ffffff;
+            padding-bottom: 15px;
+        }
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color:#ffffff ;
+            opacity: 0.3;
+            border-radius: 50%;
+            position: absolute;
+            top: 80px;
+            left: -30px;
+        }
+        .circle2 {
+            width: 100px;
+            height: 100px;
+            background-color: #ffffff;
+            opacity: 0.3;
+            border-radius: 50%;
+            position: absolute;
+            top: -40px;
+            right: -30px;
+        }
+        .circle3 {            
+            width: 100px;
+            height: 100px;
+            border: 0.5px solid #ffffff;
+            background-color:#fa8163 ;
+            opacity: 0.3;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left: -50px;
+        }
+        .hide {
+            background-color: #160e4d;
+            padding: 5px 15px;
+            color: #ffffff;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: none;
+            position: absolute;
+            top: -40px;
+            left: -10px;
+        }
+        .hover {
+            position: relative;
+        }
+       
+       
+        
+        
+    </style>
+</head>
+<body>
+    <div class="firstblock">
+        <h1>Shopey</h1>
+        <ul>
+            <li>Home</li>
+            <li>Dashboard</li>
+            <li>All Stats</li>
+            <li>Products</li>
+           
+        </ul>
+        <div class="bagblock">
+            <img src="https://www.freepnglogos.com/uploads/shopping-bag-png/google-white-shopping-bag-icon-kalost-14.png">
+            <p>Upgrade to premium</br>and get 50% discount</p>
+            <button type="button">Upgrade Now</button>
+        </div>
+    </div>
+    <div class="middleblock">
+        <input type="text" placeholder="search for transactions and products">
+        <div class="easyshoppingblock">
+            <div class="imageblock">
+                <img src="https://www.pngmart.com/files/15/Smiling-Girl-Shopping-Vector-Blue-Eyes-Transparent-PNG.png">
+                <div class="imagetext">
+                    <h1>Easy Shopping easy</h1>
+                    <p>Find your awesome experience</br>while shopping by your phone</p>
+                    <button type="button">Sign in</button>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li>Products</li>
+            <li>Customers</li>
+            <li>Members</li>
+        </ul>
+        <div class="productsblock">
+            <div class="sixtyblock">
+                <h1>Products Sold</h1>
+                <p>480 sold</p>
+                <div class="graph">
+                    <div>
+                        <div class="mon"></div>
+                        <p>mon</p>
+                    </div>
+                    <div>
+                        <div class="tue"></div>
+                        <p>tue</p>
+                    </div>
+                    <div>
+                        <div class="wed"></div>
+                        <p>wed</p>
+                    </div>
+                    <div class="hover">
+                        <p class="hide">68</p>
+                        <div class="thu"></div>
+                        <p>thu</p>
+                    </div>
+                    <div>
+                        <div class="fri"></div>
+                        <p>fri</p>
+                    </div>
+                    <div>
+                        <div class="sat"></div>
+                        <p>sat</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nikeblock">
+                <div class="row1">
+                    <p> <input type="radio"></p>
+                    <img src="https://freepngimg.com/thumb/categories/627.png">
+                    <p>Nike blazer</p>
+                    <p>£24</p>
+                </div>
+                <div class="row1">
+                    <p> <input type="radio"></p>
+                    <img src="https://freepngimg.com/thumb/categories/627.png">
+                    <p>Nike blazer</p>
+                    <p>£24</p>
+                </div>
+                <div class="row1">
+                    <p> <input type="radio"></p>
+                    <img src="https://freepngimg.com/thumb/categories/627.png">
+                    <p>Nike blazer</p>
+                    <p>£24</p>
+                </div>
+                <div class="row1">
+                    <p> <input type="radio"></p>
+                    <img src="https://freepngimg.com/thumb/categories/627.png">
+                    <p>Nike blazer</p>
+                    <p>£24</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="finalblock">
+            <input type="text" placeholder="Hi Fawaaz">
+            <div class="moneyblock">
+                    <p>$1,800.00</p>
+                    <button type="button"> Topup</button>
+                    <div class="circle"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+            </div>
+           
+            <div class="activity">
+                <h3>New Activities</h3>
+                <p>View all</p>
+            </div>
+        </div>
+</body>
+</html>

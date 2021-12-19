@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/all.css" rel="stylesheet">
+    <style>
+        h1 {
+            margin: 0px;
+        }
+        body {
+            background-color: #f9f9f9;;
+            margin: 0px;
+            color: #b0b0b0;
+            display: flex;
+            flex-direction: row;
+        }
+        h3 {
+            margin: 0px;
+        }
+        .firstblock {
+            padding: 20px;
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #ffffff;
+          
+            
+        }
+        .firstblock li{
+            list-style: none;
+            padding-bottom: 15px;
+          
+        }
+        .icons2 ul{
+            padding-left: 0px;
+        }
+        .icons2 i {
+            padding-right: 10px;
+        }
+        .icons{
+            display: flex;
+            flex-direction: column;
+        }
+         .icons div{
+           padding: 10px 20px ;
+          
+        } 
+        .firstblock h1{
+            padding-bottom: 25px;
+            color: #6e5ecf;
+        }
+        .icons div:hover {
+            background-image: linear-gradient(to right, rgba(120,108,240,1),rgba(147,139,247,1));
+            box-shadow: 0px 0px 5px 5px #796bf1 ;
+            color: white;
+           
+        }
+        .icons2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+        }
+        .mainnavbar {
+            margin: 25px;
+            display: flex;
+            flex-direction: row;
+            background-color: white;
+            width: calc(100% - 50px);
+            height: 50px;
+            justify-content: space-between;
+        }
+        .mainnavbar img {
+            width: 20%;
+            padding: 0px 20px;
+           
+        }
+        .navright {
+            display: flex;
+            flex-direction: row;
+        }
+        .navright h5 {
+            padding:0px 10px;
+        }
+        .middleblock {
+            width: 85%;
+        }
+        .congratsblock {
+            background-color: white;
+            width: 30%;
+            padding: 10px;
+            margin: 25px;
+            display: flex;
+            flex-direction: row;
+            /* align-items:flex-start;
+            justify-content: space-evenly;
+             */
+        }
+        h1,h2,h3,p{
+            margin: 0px;
+        }
+        .congratsblock img {
+            width: 30%;
+        }
+        .congratsblock h3{
+            color:#8176ef ;
+        }
+        .congratsblock button {
+            background-color: #8176ef;
+            color: white;
+            padding: 5px 10px;
+            border: 0px;
+        }
+        .ordersblock {
+            display: flex;
+            flex-direction: row;
+            
+            width: 30%;
+            margin: 25px;
+           
+            
+           
+        }
+        .orders {
+            width:calc(50% - 12.5px);
+            margin-right: 12.5px;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+        .profit {
+            margin-left: 12.5px; 
+            width: calc(50% - 12.5px);
+            background-color: #ffffff;
+            padding: 10px;
+        }
+        .ordersblock h2{
+            margin: 0px;
+        }
+        .ordersblock p {
+            margin: 0px;
+        }
+        .earnings {
+            background-color: #ffffff;
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="firstblock">
+        <h1>Vuexy</h1>
+        <div>
+            <div class="icons">
+                <div>Dashboard</div>
+                <div>Analytics</div>
+                <div>E-commerce</div>
+            </div>
+        </div>
+        <div class="icons2">
+            <p>Apps and pages</p>
+            <ul>
+                <li> <i class="far fa-envelope"></i>Email</li>
+                <li> <i class="far fa-comment-alt"></i>Chat</li>
+                <li> <i class="far fa-check-square"></i>Todo</li>
+                <li> <i class="far fa-calendar-alt"></i>Calender</li>
+                <li>Kanban</li>
+                <li> <i class="far fa-file-invoice"></i>Invoice</li>
+                <li>File manager</li>
+                <li>e commerce</li>
+                <li>User</li>
+                <li>Pages</li>
+            </ul>
+        </div>
+    </div>
+    <div class="middleblock">
+        <div class="mainnavbar">
+            <div>
+                <img src="https://icon-library.com/images/message-icon-transparent/message-icon-transparent-23.jpg">
+            </div>
+            <div class="navright">        
+                <h5>English</h5>
+                <h5>John Doe</h5>
+            </div>
+        </div>
+        <div class="congratsblock">
+            <div>
+                <h3>Congratulations John</h3>
+                <p>You have won gold medal</p>
+                <h3>$48.9k</h3>
+                <button type="button">View Sales</button>
+            </div>
+            
+            <img src="https://assets.stickpng.com/images/580b585b2edbce24c47b2af3.png"> 
+            
+        </div>
+        <div class="ordersblock">
+            <div class="orders">
+                <p>Orders</p>
+                <h2>2,76k</h2>
+                <div>
+                    <ul>
+                        <li class="borderline"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="profit">
+                <p>Profit</p>
+                <h2>6,24k</h2>
+            </div>
+        </div>
+        <div class="earnings">
+            <h3>Earnings</h3>
+        </div>
+    </div>
+</body>
+</html>

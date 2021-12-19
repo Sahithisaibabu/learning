@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Oswald&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            font-family: 'Oswald', sans-serif;
+        }
+        h1,
+        ul {
+            margin: 0px;
+        }
+        .backgroundblock {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            display: inline;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar li:not(:first-child) {
+            padding-left: 25px;
+        }
+        .navbar li:first-child {
+            color: blueviolet;
+        }
+        .navbar button {
+            color: brown;
+            border-color: brown;
+            border-radius: 25px;
+            padding: 5px 15px;
+            background-color: transparent;
+        }
+        .middleblock .buttonblue {
+            background-color: blue;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            padding-right: 20px;
+            border:0px;
+        }
+        .button2 {
+            color: brown;
+            border-color: brown;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: transparent;
+        }
+        .middleblock {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        .middleblockbackground {
+            background-image: url('https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80');
+            height: 100vh;
+            width: 30vw;
+            border-radius: 200px 30px 30px 30px;
+            position: relative;
+            background-size: cover;
+            margin-right: 100px;
+        }
+        .imgoverlay img {
+            height: 20vh;
+            width: 20vw;
+            position: absolute;
+            bottom: 50px;
+            right: -100px;
+            border: solid cornsilk;
+        }
+        ul {
+            list-style: none;
+        }
+        .numbers {
+            padding: 0px 100px 0px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .numbers p {
+            text-align: center;
+        }
+        .finalbackgrounblock {
+            background-color: #f9fafe;
+            padding: 75px 150px;
+            margin-top: 100px;
+        }
+        .numbers div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .numbers p {
+            color: #d8d9db;
+            margin: 0px;
+            font-size: 15px;
+        }
+        .numbers h1 {
+            font-size: 100px;
+            margin: 0px;
+        }
+        .buttondisplay p {
+            display: inline;
+        }
+        .buttondisplay p:first-child {
+            padding-right: 20px;
+        }
+        .finalbackgrounblock h2 {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="backgroundblock">
+        <div class="navbar">
+            <h1>Yavin</h1>
+            <ul>
+                <li>Home</li>
+                <li>Details</li>
+                <li>Services</li>
+                <li>Project</li>
+                <li>Drop</li>
+                <li><button type="button">Contact Us</button></li>
+            </ul>
+        </div>
+        <div class="middleblock">
+            <div>
+                <h1>Beautifying <br />office spaces</h1>
+                <p style="color: #d8d9db;">Is education residence conveying and sore.Suppose<br /> shyness says ten
+                    behaved morning had.Any propose<br /> assist compliment occasional too reasonably</p>
+                <div class="buttondisplay">
+                    <p><button class="buttonblue" type="button">More details</button></p>
+                    <p><button class="button2" type="button">Contact us</button></p>
+                </div>
+            </div>
+            <div class="middleblockbackground">
+                <div class="imgoverlay">
+                    <img src="https://images.all-free-download.com/images/graphicthumb/small_green_tree_200348.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="numbers">
+            <div>
+                <h1>231</h1>
+                <p>Happy Customers</p>
+            </div>
+            <div>
+                <h1>385</h1>
+                <p>Issues Solved</p>
+            </div>
+            <div>
+                <h1>159</h1>
+                <p>Good Reviews</p>
+            </div>
+            <div>
+                <h1>128</h1>
+                <p>Case Studies</p>
+            </div>
+        </div>
+    </div>
+    <div class="finalbackgrounblock">
+        <h2>Creating office spaces in our passion and you<br /> can see that in our completed projects</h2>
+        <p style="color: #d8d9db;">Creating office spaces in our passion and you<br /> can see that in our completed
+            projectsCreating office spaces in our passion and you<br /> can see that in our completed projects</p>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <style>
+    body,div,h1,h2,p,img,table{
+        margin: 0px;
+        border:0px;
+    }
+    body {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    .backgroundblock {
+        background-image: url('https://cdn.pixabay.com/photo/2018/04/25/09/26/eiffel-tower-3349075__480.jpg');
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar1 {
+        padding-left: 200px;
+        position: fixed;
+        border-bottom: 0.5px solid #ffffff;
+        color:#ffffff;
+        width: calc(100vw - 200px);
+    }
+    .navbar1 td {
+        padding-right: 50px;
+    }
+    .navbar2 {
+        padding-top: 50px;
+    }
+    .canvaspadding {
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .navbar2 td:not(:first-child) {
+        padding-right: 25px;
+    }
+    .formtopbar {
+        padding-top: 100px;
+        padding-left: 150px;
+    }
+    .formstyle {
+        
+        background-color: #ffffff;
+        width: 50vw;
+        margin-left: 100px;
+        
+    }
+    .formbackground {
+        width: 100%;
+        padding: 25px;
+    }
+  
+      
+       
+    .taskbar1 {
+        padding: 100px 150px;
+    }
+    .taskbar1 td {
+        padding-right: 100px;
+    }
+    .page2 p,h1 {
+        text-align: center;
+    }
+    .clusterimages img {
+        width:calc(25vw - 16px);
+        margin-right:16px;
+        margin-bottom: 0px;
+        
+    }
+    .mapimage {
+        width: 60vw;
+        height: 50vh;
+        background-size: cover;
+    }
+    .mapposition {
+        position: relative;
+        background-color: #ffffff;
+    }
+    
+    .destinationlist img {
+        height: 8vh;
+        width: 8vw;
+      
+       
+    }
+    .destinationlist{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    }
+    .formbackground input {
+        width: 100%;
+    }
+    .domesticbutton {
+        background-color: #B95754;
+        color: #ffffff;
+        border: 0px;
+        padding: 5px;
+    }
+    .intbutton {
+        background-color: #666E71;
+        color: #ffffff;
+        border: 0px;
+        padding: 5px;
+    }
+    .textright {
+        text-align: right;
+        
+    }
+    .uppercase {
+        text-transform: uppercase;
+
+    }
+    .formstyle td {
+        padding-bottom: 10px;
+    }
+    .textcolor {
+        color: #B95754;
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="backgroundblock">
+        <div class="navbar1">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Home</td>
+                        <td>FAQS</td>
+                        <td>Contact</td>
+                        <td>FAQ</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="navbar2">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="canvaspadding"><h1>Canvas</h1></td>
+                        <td><button type="button">Home</button></td>
+                        <td>Hotels</td>
+                        <td>Flights</td>
+                        <td>Holidays</td>
+                        <td>Blog</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="formtopbar">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><button type="button">flights</button></td>
+                        <td><button type="button">Hotels</button></td>
+                        <td><button type="button">flights+hotels</button></td>
+                        <td><button type="button">Holidays</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="formstyle">
+            <form action="post">
+                <table class="formbackground">
+                    <tbody >
+                        <tr>
+                            <td colspan="3"><h2 class="uppercase">Book your flights</h2></td>
+                            <td class="textright" colspan="1"><button class="domesticbutton" type="button">Domestic</button><button class="intbutton" type="button">International</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label for="from">FROM</label><input id="from"type="text" placeholder="LHR,HEATHROW"></td>
+                            <td colspan="2"><label>TO<input type="text" placeholder="RGV,HYDERABAD"></label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><p>DEPARTURE</p><input type="date" placeholder="MM,DD,YYYY"></td>
+                            <td><p>RETURN</p><input type="date" placeholder="MM,DD,YYYY"></td>
+                            <td><p>Adults</p><input type="number" placeholder="2"></td>
+                        </tr>
+                        <tr>
+                            <td><button class="domesticbutton" type="button">SEARCH FLIGHTS</button></td>
+                            <td colspan="2"></td>
+                            <td class="textright"><a class="textcolor"  href="https://www.google.com/"><i>ADVANCED SEARCH</i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+    <div class="taskbar1">
+        <table>
+            <tbody>
+                <tr>
+                    <td>Search flights</td>
+                    <td>Get hot deals</td>
+                    <td>Holiday packages</td>
+                    <td>649693q6496239</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="page2">
+        <p>What are you in the mood for</p>
+        <h1>Tailor made packages for you</h1>
+    </div>
+    <div class="clusterimages">
+        <table>
+            <tbody>
+                <tr>
+                    <td><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg"></td>
+                    <td><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg"></td>
+                    <td><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg"></td>
+                    <td><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg"></td>
+                </tr>
+                <tr>
+                    <td><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg"></td>
+                    <td><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg"></td>
+                    <td><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg"></td>
+                    <td><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="mapposition" >
+        <img  class="mapimage" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/A_large_blank_world_map_with_oceans_marked_in_blue.PNG">
+        <ul class="destinationlist">
+            <li><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg"> NIGHTDAYS EUROPE</li>
+            <li><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg">7 NIGHTDAYS THAILAND</li>
+            <li><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg">7 NIGHTDAYS CHINTHALPUDI</li>
+            <li><img src="https://scx1.b-cdn.net/csz/news/800a/2018/mountainmadn.jpg"> NIGHTDAYS UNITED STATES</li>
+        </ul>
+    </div>
+    </body>
+</html>
