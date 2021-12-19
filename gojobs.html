@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #f5f6fa;
+        }
+        input{
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 0px;
+            height: 3%;
+        }
+        .middleblock{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 25px;
+           
+        }
+        
+        .middleblock div{
+          background-color: white;
+          margin-right: 25px;
+          width: 40%;
+          height: 40vh;
+          text-align: center;
+        }
+        .secondblock h3{
+            color: #7c65ae;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+        .secondblock p{
+            margin: 0px;
+            margin-bottom: 10px;
+            color: #d6d7dc;
+        }
+        .middleblock :last-child{
+            margin-right: 0px;
+        }
+        tbody{
+            background-color: white;
+        }
+        .secondblock{
+            padding: 0px 25px 0px 25px;
+        }
+        tr{
+            width: 100%;
+        }
+        thead td{
+            background-color: #eaedf4;
+        }
+        td{
+            background-color: white;
+            padding: 10px 120px 10px 0px;
+            margin: 0px;
+            border-bottom: 0.2px solid lightgray;
+        }
+        table{
+            border-spacing: 0px;
+        }
+        tr :first-child{
+            padding-left: 25px;
+        }
+        .middleblock img{
+            width: 20%;
+            
+        }
+        .middleblock h4{
+            color: #7c65ae;
+        }
+        .middleblock :first-child h4{
+            margin: 0px;
+        }
+        .middleblock :first-child p{
+            padding-top: 10px;
+            border-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text"  placeholder="search">
+    </div>
+    <div class="secondblock">
+        <h3>Dashboard</h3>
+        <p >welcome to gojobs job seeker's dashboard</p>
+        <div class="middleblock">
+            <div id="firstblock">
+                <!-- <img src="https://lh3.googleusercontent.com/proxy/ItAxlDq8EwGjJNxO_3yf8GtINqXRNm2--frwoqVMXPgdK2rt7IKzFGuLhTqUFyfKjBuwmaQkTUSJOgN_zIMz1wP66TdPIJ-QTvPoLchZgjlkAPvAn8BPFZIjI2TrMIpMeTxwlyE"> -->
+                <!-- <h4>John Lewis</h4>
+                <p>Full Stack developer</p> -->
+            </div>
+            <div>
+                <p>Interview Schedule</p>
+                <h4>21 Jul, 2016</h4>
+            </div>
+            <div>tweweryery</div>
+        </div>
+        <table>
+            <thead>
+               <tr>
+                    <td>Title</td>
+                    <td>Body</td>
+                    <td>UserId</td>
+                    <td>Id</td>
+                </tr>
+            </thead>
+             <tbody id="tabledata">
+                 <!-- <tr>
+                    <td> "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"</td>
+                    <td>1</td>
+                    <td>sunt aut facere repellat provident occaecati excepturi optio reprehenderit</td>
+                    <td>1</td>
+                </tr> -->
+                
+                <!-- body: "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+                id: 1
+                title: "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"
+                userId: 1 -->
+
+                <!-- <tr>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                </tr>
+                <tr>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                </tr>
+                <tr>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                </tr>
+                <tr>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                    <td>online shopping on amazon</td>
+                </tr> -->
+
+            </tbody>
+        </table>
+    </div>
+    <script>
+        
+        fetch("https://jsonplaceholder.typicode.com/posts")
+        .then( Response => Response.json())
+        .then(data => {
+            let tbody="";
+            console.log(data);
+            for(let i=0;i<5;i++){
+               tbody += "<tr><td>" + data[i].body + "</td><td>" + data[i].userId + "</td><td>" + data[i].title + "</td><td>" + data[i].id + "</td></tr>";
+              
+            }
+            document.getElementById("tabledata").innerHTML=tbody;
+            })
+            
+            .catch(error => console.log(error))
+        
+        fetch("https://randomuser.me/api/")
+        .then(response => response.json())
+        .then(input =>{
+            let output="";
+            console.log(input);
+            output += "<img src=" + input.results[0].picture.large + ">" +
+            "<h4>" + input.results[0].email + "</h4><p>" + input.results[0].phone + "</p>";
+            document.getElementById("firstblock").innerHTML=output;
+            
+
+        })
+        .catch(error => console.log(error))
+
+    </script>
+</body>
+</html>

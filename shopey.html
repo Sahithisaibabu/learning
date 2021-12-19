@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Oswald&family=PT+Serif:ital@1&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            font-family: 'Merriweather', serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'PT Serif', serif;
+        }
+
+        .sideblock {
+            background-color: #FAFAFA;
+            display: flex;
+            flex-direction: column;
+            /*justify-content: space-between;*/
+            height: 100vh;
+            
+
+        }
+
+        h3 {
+            margin: 0px;
+        }
+
+        h1,
+        p,
+        li {
+            color: #29234A;
+        }
+        .sideblock {
+            padding: 30px 20px;
+           
+        }
+
+        .bagimageblock p {
+            margin: 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+           
+        }
+        .bagimageblock {
+            text-align: center;
+        }
+        .sideblock h1 {
+            margin: 0px;
+           text-align: center;
+           
+            
+        }
+
+        .listitems li {
+            list-style: none;
+            padding-bottom: 25px;
+        }
+      
+
+        .bagimageblock img {
+            width: 10vw;
+            height: 20vh;
+        }
+
+        .bagimageblock {
+            background-color: #FFF4E8;
+            justify-self: end;
+            margin-top: auto;
+            padding: 25px;
+            border-radius: 30px;
+        }
+
+        .bagimageblock button {
+            border-radius: 20px;
+            background-color: #F0846B;
+            color: #ffffff;
+            border: 0px;
+            padding: 10px;
+            
+        }
+
+        .easyshoppingblock {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-top: 25px;
+            background-color: #FFF4E8;
+            margin-top: 25px;
+            border-radius: 10px;
+            padding-right: 10px;
+
+        }
+
+        .easyshoppingblock img {
+           
+            width: 200px;
+
+        }
+
+        .mainbody {
+            display: flex;
+        }
+
+        .middleblock input {
+            width: 100%;
+
+        }
+
+        .middleblock {
+            padding-left: 25px;
+            width: 60%;
+            padding-top: 20px;
+        }
+
+        .productsblock {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        .productsblock li {
+            list-style: none;
+            padding-right: 25px;
+            display: inline;
+
+        }
+
+        .productsblock li:hover {
+            font-size: 150%;
+            text-decoration: underline;
+        }
+
+        .graph {
+
+
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .graph p {
+
+            margin-right: 10px;
+            width: 25px;
+            background-color: orange;
+        }
+
+        .mon {
+            height: 25px;
+        }
+
+        .tue {
+            height: 30px;
+        }
+
+        .wed {
+            height: 40px;
+        }
+
+        .thu {
+            height: 35px;
+        }
+
+        .fri {
+            height: 40px;
+        }
+
+        .sat {
+            height: 25px;
+        }
+
+        .days {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .days p {
+            margin-right: 10px;
+        }
+
+        .productsoldblock {
+            border: 1px solid gray;
+            width: 30%;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .row1 img {
+            height: 10vh;
+            width: 10vwss;
+        }
+
+        .row1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            margin: 0px;
+            justify-content: space-evenly;
+        }
+
+        .model {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        .nike {
+
+
+            width: 70%;
+        }
+
+        .bottomblock {
+            display: flex;
+            flex-direction: row;
+        }
+        .endblock {
+            padding-top: 20px;
+            padding-left: 50px;
+        }
+        .endblock input {
+            width: 100%;
+        }
+        .buttonbackground {
+            padding: 50px 25px;
+            width: 100%;
+            height: 30%;
+            background-color: orange;
+
+        }
+    </style>
+</head>
+
+<body class="mainbody">
+    <div class="sideblock">
+        <h1>Shopey</h1>
+        <div class="listitems">
+            <ul>
+                <li>Home</li>
+                <li>Dashboard</li>
+                <li>All stats</li>
+                <li>Products</li>
+                <li>Messages</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+        <div class="bagimageblock">
+            <img
+                src="https://cdn.dribbble.com/users/4208985/screenshots/15089086/media/ad83cbba32b2993f60ee645543c6285e.png?compress=1&resize=1600x1200">
+            <p>Upgrade to premium</br>and get 50% discount</p>
+            <button type="button">Upgrade Now</button>
+        </div>
+    </div>
+    <div class="middleblock">
+        <input placeholder="search for products or transactions">
+        <div class="easyshoppingblock">
+            <img
+                src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/34999/woman-shopping-clipart-xl.png">
+            <div>
+                <h1>Easy shopping Easy</h1>
+                <p>Find awesome experience<br />shopping on your phone</p>
+                <button type="button">Sign in</button>
+            </div>
+        </div>
+        <div class="productsblock">
+            <ul>
+                <li>Products</li>
+                <li>Customers</li>
+                <li>Members</li>
+            </ul>
+        </div>
+        <div class="bottomblock">
+            <div class="productsoldblock">
+                <h1>Products Sold</h1>
+                <p>480 products sold</p>
+                <div class="graph">
+                    <p class="mon"></p>
+                    <p class="tue"></p>
+                    <p class="wed"></p>
+                    <p class="thu"></p>
+                    <p class="fri"></p>
+                    <p class="sat"></p>
+                </div>
+                <div class="days">
+                    <p>mon</p>
+                    <P>tue</P>
+                    <p>wed</p>
+                    <p>thu</p>
+                    <p>fri</p>
+                    <p>sat</p>
+                </div>
+            </div>
+            <div class="nike">
+                <div class="row1">
+                    <input type="radio">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3bxeLIqtxEer6kfGbIOjhWMbeuRCXnQcazQ&usqp=CAU">
+                    <div class="model">
+                        <h3>Nike Air</h3>
+                        <p>20 sold</p>
+                    </div>
+                    <p>£24</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="endblock">
+        <input placeholder="Hi fawaaz">
+        <div class="buttonbackground">
+            <button type="button">Topup</button>
+        </div>
+    </div>
+</body>
+
+</html>

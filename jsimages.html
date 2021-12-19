@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainstyle{
+            margin: 100px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+           
+        }
+        .blocks{
+            /* background-image: url("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg"); */
+            width: 300px;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+        .blocks:nth-of-type(3n){
+            margin-right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainstyle" id="main">
+        <!-- <div class="blocks">
+           <h3>Restaurants</h3>
+           <button>48 listings</button>
+        </div>
+        <div class="blocks">
+            <h3>Restaurants</h3>
+            <button>48 listings</button>
+         </div>
+         <div class="blocks">
+            <h3>Restaurants</h3>
+            <button>48 listings</button>
+           
+         </div>
+         <div class="blocks">
+            <h3>Restaurants</h3>
+            <button>48 listings</button>
+         </div>
+         <div class="blocks">
+            <h3>Restaurants</h3>
+            <button>48 listings</button>
+         </div> -->
+         <!-- <div class="blocks">
+            <h3>Restaurants</h3>
+            <button>48 listings</button>
+         </div> -->
+    </div>
+    <script>
+        let output="";
+        let content =[{
+            image:"https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__480.jpg",
+            head:"Restaurants",
+            button:"48listings",
+        },
+        {
+            head:"Restaurants",
+            button:"48listings",
+        },
+        {
+            head:"Restaurants",
+            button:"48listings",
+        },
+        {
+            head:"Restaurants",
+            button:"48listings",
+        },
+        {
+            head:"Restaurants",
+            button:"48listings",
+        },
+        {
+            head:"Restaurants",
+            button:"48listings",
+        },
+    ]
+        for(let i=0;i<content.length;i++){
+            
+            output += "<div class='blocks' id='block"+i+"'><h3>"+content[i].head + "</h3><button>" +content[i].button +"</button></div>";
+            setTimeout(()=>{document.getElementById("block"+i).style.backgroundImage="url("+content[i].image+")"});
+            // document.getElementById("block"+i).style.backgroundImage="url("+content[i].image+")"
+        }
+        document.getElementById("main").innerHTML=output;
+    </script>
+</body>
+</html>

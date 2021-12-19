@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/all.css" rel="stylesheet">
+    <style>
+    .bodybackground {
+        background-color: #6481d1;
+    }
+    .contentbackground {
+        background-color: #ffffff;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:50px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .contentbackground p {
+        margin: 0px;
+        color: #a4aeca;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .contentbackground h3{
+        color: #6e7b9e;
+        margin: 0px;
+        padding-bottom: 15px;
+    }
+    .contentbackground img {
+        width: 100px ;
+    }
+    .contentbackground p {
+        padding-top: 30px;
+        margin: 0px;
+    }
+    .imageblock {
+        width: 100%;
+        padding: 20px 0px;
+        border: 0.5px dotted  #6481d1 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to bottom,rgba(248,250,255,1),rgba(242,246,255,1));
+        border-radius: 10px;
+    }
+    .imageblock p {
+        padding-top: 20px;
+        color: #6e7b9e;
+    }
+    .imageblock h4 {
+        color: #6e7b9e;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+    .imageblock button {
+        background-color: #5874c6;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: 0px;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px 7px rgba(88,116,198,0.3);
+
+    }
+    .tabs img {
+        width: 50px;
+    }
+    .tabs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       width: 100%;
+       align-items: center;
+       padding: 20px;
+    }
+    .inline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .tabs2 {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 80px;
+        flex-grow: 1;
+    }
+    .line {
+        width: 80%;
+        height: 4px;
+        background-image:linear-gradient(to right,#9db2ff,#e9eefc);
+    }
+    .upload {
+        align-self: flex-start;
+    }
+    </style>
+</head>
+<body class="bodybackground">
+    <div class="contentbackground">
+        <h3>UPLOAD FILES</h3>
+        <p>Upload documents you want to share<br/>with your team</p>
+        <div class="imageblock">
+            <img src="C:\rose anna\Web 2\practice\yavin\upload-icon-20606.png">
+            <p>Drag and drop your files here</p>
+            <h4>OR</h4>
+            <button type="button">Browse files</button>
+        </div>
+        <p class="upload">Uploaded files</p>
+        <div class="tabs">
+            <img src="https://cdn-icons-png.flaticon.com/512/337/337946.png">
+            <div class="tabs2">
+                <div class="inline">
+                    <p >Dribble cv</p>
+                    <p>64%</p>
+                </div>
+                <div class="line">
+
+                </div>
+            </div>
+            <i class="far fa-times-circle"></i>
+        </div>
+    </div>
+  
+</body>
+</html>

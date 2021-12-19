@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>These are string literals</p>
+   <p>String literals are not supported by internet explorer</p>
+   <button onclick=" myfunction()"> click me!!</button>
+   <p id="demo"></p>
+   <script>
+     let x=["apple","banana","orange"];
+     document.getElementById("demo").innerHTML=x;
+        function myfunction(){
+            x.push("lemon");
+            document.getElementById("demo").innerHTML=x;
+        }
+        // let y="<ul>";
+        // function myfunction2(){
+        //     for (let i=0;i<x.length;i++) {
+        //         y +="<li>"+x[i]+"</li>";
+                
+        //     }
+        //     y +="</ul>";
+        //     document.getElementById("demo").innerHTML=y;
+        // }
+
+   </script>
+</body>
+</html>
